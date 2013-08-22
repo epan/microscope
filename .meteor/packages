@@ -8,3 +8,5 @@ preserve-inputs
 bootstrap
 standard-app-packages
 router
+accounts-ui-bootstrap-dropdown
+accounts-password
