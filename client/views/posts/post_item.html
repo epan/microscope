@@ -6,7 +6,8 @@
         <span>{{domain}}</span>
       </h3>
       <p>
-        submitted by {{author}}
+        submitted by {{author}},
+        <a href="{{postPagePath this}}">{{commentsCount}} comments</a>
         {{#if ownPost}}
           <a href="{{postEditPath this}}">Edit</a>
         {{/if}}
