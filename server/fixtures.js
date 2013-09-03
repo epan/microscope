@@ -18,7 +18,8 @@ if (Posts.find().count() === 0) {
     userId: kelly._id,
     author: kelly.profile.name,
     url: 'http://kellymiyashiro.com/',
-    submitted: now - 7 * 3600 * 1000
+    submitted: now - 7 * 3600 * 1000,
+    commentsCount: 2
   });
 
   Comments.insert({
@@ -40,19 +41,25 @@ if (Posts.find().count() === 0) {
   Posts.insert({
     title: 'Introducing Telescope',
     author: 'Sacha Grief',
-    url: 'http://sachagrief.com/introducing-telescope/'
+    url: 'http://sachagrief.com/introducing-telescope/',
+    submitted: now,
+    commentsCount: 0
   });
 
   Posts.insert({
     title: 'Meteor',
     author: 'Tom Coleman',
-    url: 'http://meteor.com'
+    url: 'http://meteor.com',
+    submitted: now,
+    commentsCount: 0
   });
 
   Posts.insert({
     title: 'The Meteor Book',
     author: 'Tom Coleman',
-    url: 'http://themeteorbook.com'
+    url: 'http://themeteorbook.com',
+    submitted: now,
+    commentsCount: 0
   });
 }
 
