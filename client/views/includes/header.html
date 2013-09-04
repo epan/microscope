@@ -9,8 +9,14 @@
       <a class="brand" href="{{postsListPath}}">Microscope</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
+          <li class="{{activeRouteClass 'home' 'newPosts'}}">
+            <a href="{{homePath}}">Latest</a>
+          </li>
+          <li class="{{activeRouteClass 'bestPosts'}}">
+            <a href="{{bestPostsPath}}">Best</a>
+          </li>
           {{#if currentUser}}
-            <li><a href="{{postSubmitPath}}">New</a></li>
+            <li><a href="{{postSubmitPath}}">Submit Post</a></li>
             <li class="dropdown">{{> notifications}}</li>
           {{/if}}
         </ul>
